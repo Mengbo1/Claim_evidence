@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "notes": "Add an alias only after its meaning is confirmed by the platform's rule description or another reliable source. Unknown rule names remain generic YARA facts.",
+  "behaviors": [
+    {
+      "canonical_id": "browser_login_information_collection",
+      "predicate": "indicates_behavior",
+      "object_type": "behavior_capability",
+      "evidence_domain": "static_file",
+      "aliases": ["browserLoginInfoGathering", "browser_login_info_gathering", "browser-login-info-gathering"],
+      "claim_terms": ["browser login", "login information", "browser credential", "credential collection"]
+    },
+    {
+      "canonical_id": "packing_or_protection_indicator",
+      "predicate": "indicates_static_property",
+      "object_type": "static_file_property",
+      "evidence_domain": "static_file",
+      "aliases": ["suspicious_packer_section"],
+      "claim_terms": ["packed", "packer", "protector", "obfuscated"]
+    },
+    {
+      "canonical_id": "cryptomining_related_detection",
+      "predicate": "indicates_behavior",
+      "object_type": "behavior_capability",
+      "evidence_domain": "static_file",
+      "aliases": ["xmrig"],
+      "claim_terms": ["cryptomining", "coinminer", "mining"]
+    },
+    {
+      "canonical_id": "loader_related_detection",
+      "predicate": "indicates_behavior",
+      "object_type": "behavior_capability",
+      "evidence_domain": "static_file",
+      "aliases": ["donutloader", "donut_loader"],
+      "claim_terms": ["loader", "in-memory loader"]
+    },
+    {
+      "canonical_id": "credential_stealer_related_detection",
+      "predicate": "indicates_behavior",
+      "object_type": "behavior_capability",
+      "evidence_domain": "static_file",
+      "aliases": ["meduza", "meduza_stealer"],
+      "claim_terms": ["credential theft", "credential stealer", "stealer"]
+    }
+  ]
+}
