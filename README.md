@@ -18,8 +18,8 @@ python -m pip install openpyxl
 
 ```powershell
 python run_assessment.py `
-  --input claim_evidence_input_manual.xlsx `
-  --output claim_evidence_result_code.xlsx
+  --input claim_evidence_input.xlsx `
+  --output claim_evidence_result.xlsx
 ```
 
 
