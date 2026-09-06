@@ -1,8 +1,3 @@
-# Rule-Based Claim--Evidence Assessment
-
-Code accompanying the dissertation. It reproduces the rule-based assessment
-reported in the thesis.
-
 ## Files
 
 - `run_assessment.py` — entry point.
@@ -23,12 +18,8 @@ python -m pip install openpyxl
 
 ```powershell
 python run_assessment.py `
-  --input ..\data\claim_evidence_input_manual.xlsx `
-  --output ..\data\claim_evidence_result_code.xlsx
+  --input claim_evidence_input_manual.xlsx `
+  --output claim_evidence_result_code.xlsx
 ```
 
-## Input and output
 
-The input workbook must contain `Report Sources`, `Source Evidence Excerpts`,
-and `Synthetic Claims`. The output workbook adds automatic assessments and an
-`Assessment Summary` sheet.
