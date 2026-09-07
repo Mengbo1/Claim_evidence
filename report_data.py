@@ -6,7 +6,7 @@ import re
 from typing import Iterable, Mapping, Union
 
 
-VALID_CLAIM_TYPES = {"maliciousness", "malware_family", "behaviour"}
+VALID_CLAIM_TYPES = {"maliciousness", "malware_family"}
 VALID_MALICIOUSNESS_VALUES = {"no_threat", "low_risk", "high_risk", "malicious"}
 VALID_MANIPULATION_TYPES = {"claim_value_change", "remove_evidence"}
 UNKNOWN_FAMILY_VALUES = {"", "n/a", "n_a", "na", "none", "unknown", "not_available"}
